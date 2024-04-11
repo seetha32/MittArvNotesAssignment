@@ -1,4 +1,4 @@
-//import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import HomePage from './pages/HomePage';
 import NoteDetail from './pages/NoteDetail';
@@ -7,17 +7,14 @@ import './App.css';
 
 const App = () => {
   return (
-  /*  <BrowserRouter>
+  <BrowserRouter>
       <Routes>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/note/:id" component={NoteDetail} />
+        <Route path="/" exact component={<HomePage/>} />
+        <Route path="/note/:id" component={<NoteDetail/>} />
       </Routes>
     </BrowserRouter>
-    */
-   <div>
-    <HomePage />
-    <NoteDetail />
-   </div>
+    
+   
   );
 }
 
